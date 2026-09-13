@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://vacationrentalpms.com/</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<url><loc>https://vacationrentalpms.com/</loc><lastmod>2026-09-13</lastmod><priority>1.0</priority></url>
+<url><loc>https://vacationrentalpms.com/guides/</loc><lastmod>2026-09-13</lastmod><priority>0.9</priority></url>
+<url><loc>https://vacationrentalpms.com/guides/best-vacation-rental-pms/</loc><lastmod>2026-09-13</lastmod><priority>0.9</priority></url>
+<url><loc>https://vacationrentalpms.com/guides/what-is-vacation-rental-pms/</loc><lastmod>2026-09-13</lastmod><priority>0.8</priority></url>
+<url><loc>https://vacationrentalpms.com/guides/vacation-rental-pms-pricing/</loc><lastmod>2026-09-13</lastmod><priority>0.9</priority></url>
+<url><loc>https://vacationrentalpms.com/guides/pms-vs-channel-manager/</loc><lastmod>2026-09-13</lastmod><priority>0.8</priority></url>
+<url><loc>https://vacationrentalpms.com/guides/short-term-rental-software/</loc><lastmod>2026-09-13</lastmod><priority>0.8</priority></url>
 </urlset>
