@@ -1,0 +1,9 @@
+{
+  "name": "vacationrentalpms-com",
+  "private": true,
+  "scripts": {
+    "lint": "node scripts/validate-trust.mjs",
+    "test": "node scripts/validate-site.mjs",
+    "build": "npm run lint && npm run test"
+  }
+}

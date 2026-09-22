@@ -20,6 +20,66 @@
     window.gtag('config', GA4_ID);
   }
 
+  /*
+   * Expert-review attribution is deliberately opt-in. It renders only when a
+   * page contains both a completed #expert-review-record and an explicit
+   * [data-expert-review-attribution] target. Matching reviewedBy JSON-LD must
+   * remain in static page source and is checked by the trust validator.
+   */
+  function renderExpertReviewAttribution() {
+    const recordEl = document.getElementById('expert-review-record');
+    const target = document.querySelector('[data-expert-review-attribution]');
+    if (!recordEl || !target) return;
+
+    let record;
+    try {
+      record = JSON.parse(recordEl.textContent);
+    } catch (error) {
+      console.warn('Expert review record is invalid JSON.', error);
+      return;
+    }
+
+    const complete = record.status === 'completed'
+      && record.reviewId
+      && record.reviewedAt
+      && record.pageRevision
+      && record.reviewScope
+      && record.reviewer?.name
+      && record.reviewer?.title
+      && record.reviewer?.profileUrl
+      && Array.isArray(record.sourceChecks)
+      && record.sourceChecks.length > 0;
+
+    if (!complete) {
+      console.warn('Expert review attribution was not rendered because its record is incomplete.');
+      return;
+    }
+
+    const wrapper = document.createElement('section');
+    wrapper.className = 'expert-review-attribution';
+    wrapper.setAttribute('aria-label', 'Content review details');
+
+    const label = document.createElement('span');
+    label.className = 'provenance-label';
+    label.textContent = 'Reviewed by';
+
+    const reviewer = document.createElement('a');
+    reviewer.href = record.reviewer.profileUrl;
+    reviewer.textContent = record.reviewer.name;
+
+    const title = document.createElement('span');
+    title.textContent = record.reviewer.title;
+
+    const date = document.createElement('time');
+    date.dateTime = record.reviewedAt;
+    date.textContent = `Last reviewed: ${record.reviewedAt}`;
+
+    wrapper.append(label, reviewer, title, date);
+    target.replaceChildren(wrapper);
+  }
+
+  renderExpertReviewAttribution();
+
   const featurePaths = new Set([
     '/vacation-rental-channel-manager/',
     '/vacation-rental-automation-software/',
