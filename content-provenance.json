@@ -1,0 +1,138 @@
+{
+  "site": "https://vacationrentalpms.com",
+  "publisher": {
+    "name": "VacationRentalPMS.com",
+    "id": "https://vacationrentalpms.com/#organization"
+  },
+  "lastAudited": "2026-09-22",
+  "expertReview": {
+    "status": "required_not_yet_implemented",
+    "publicReviewerProfiles": [],
+    "reviewedRoutes": [],
+    "statement": "No person is currently represented as an expert reviewer because no verified vacation-rental or PMS qualification and no completed page-level review record are available."
+  },
+  "labels": {
+    "fact": "A factual product capability must be supported by a current primary vendor source.",
+    "vendorClaim": "A statement published by a vendor is attributed to that vendor and is not treated as independent validation.",
+    "editorialAnalysis": "A comparison, fit assessment or recommendation produced by VacationRentalPMS.com.",
+    "expertInterpretation": "An operational interpretation that may only be published after a qualified reviewer completes and records a page-level review."
+  },
+  "primarySources": {
+    "avrenor": {
+      "url": "https://avrenorstays.com/",
+      "type": "official_product_page",
+      "checked": "2026-09-22"
+    },
+    "guesty": {
+      "url": "https://www.guesty.com/features/",
+      "type": "official_feature_page",
+      "checked": "2026-09-22"
+    },
+    "hostaway": {
+      "url": "https://www.hostaway.com/features/",
+      "type": "official_feature_page",
+      "checked": "2026-09-22"
+    },
+    "hospitable": {
+      "url": "https://hospitable.com/",
+      "type": "official_product_page",
+      "checked": "2026-09-22"
+    },
+    "lodgify": {
+      "url": "https://www.lodgify.com/",
+      "type": "official_product_page",
+      "checked": "2026-09-22"
+    },
+    "igms": {
+      "url": "https://www.igms.com/",
+      "type": "official_product_page",
+      "checked": "2026-09-22"
+    }
+  },
+  "classifications": {
+    "A_expert_review_recommended": [
+      "/airbnb-cleaner-whatsapp-alternative/",
+      "/airbnb-pms-integration/",
+      "/airbnb-property-management-software/",
+      "/airbnb-software-for-1-property/",
+      "/airbnb-software-for-10-properties/",
+      "/airbnb-software-for-100-plus-properties/",
+      "/airbnb-software-for-2-4-properties/",
+      "/airbnb-software-for-20-properties/",
+      "/airbnb-software-for-5-properties/",
+      "/airbnb-software-for-50-properties/",
+      "/airbnb-software-stack/",
+      "/airbnb-spreadsheet-vs-pms/",
+      "/airbnb-vs-property-management-software/",
+      "/best-airbnb-management-software/",
+      "/best-vacation-rental-software/",
+      "/booking-com-pms-integration/",
+      "/channel-manager-vs-ical/",
+      "/cleaning-spreadsheet-alternative/",
+      "/compare/guesty-vs-avrenor/",
+      "/compare/hospitable-vs-avrenor/",
+      "/compare/hostaway-vs-avrenor/",
+      "/compare/igms-vs-avrenor/",
+      "/compare/lodgify-vs-avrenor/",
+      "/dynamic-pricing-software-for-vacation-rentals/",
+      "/google-sheets-alternative-for-airbnb/",
+      "/guesty-alternative/",
+      "/guides/best-vacation-rental-pms/",
+      "/guides/how-to-choose-vacation-rental-pms/",
+      "/guides/how-to-switch-vacation-rental-pms/",
+      "/guides/short-term-rental-software/",
+      "/guides/vacation-rental-pms-pricing/",
+      "/guides/when-do-you-need-vacation-rental-pms/",
+      "/hospitable-alternative/",
+      "/hostaway-alternative/",
+      "/igms-alternative/",
+      "/lodgify-alternative/",
+      "/pms-vs-channel-manager/",
+      "/pms-vs-separate-airbnb-tools/",
+      "/pms-with-pricelabs/",
+      "/switch-from-guesty/",
+      "/switch-from-hospitable/",
+      "/switch-from-hostaway/",
+      "/switch-from-lodgify/",
+      "/switch-vacation-rental-pms/",
+      "/vacation-rental-accounting-software/",
+      "/vacation-rental-analytics-software/",
+      "/vacation-rental-channel-manager/",
+      "/vacation-rental-housekeeping-software/",
+      "/vacation-rental-management-software/",
+      "/vacation-rental-operations-software/",
+      "/vacation-rental-owner-management-software/",
+      "/vacation-rental-pms-cost/",
+      "/vacation-rental-pms-for-10-properties/",
+      "/vacation-rental-pms-for-100-properties/",
+      "/vacation-rental-pms-for-20-properties/",
+      "/vacation-rental-pms-for-5-properties/",
+      "/vacation-rental-pms-for-50-properties/",
+      "/vacation-rental-pms-for-property-managers/",
+      "/vacation-rental-pms-quickbooks/",
+      "/vacation-rental-pms-smart-locks/",
+      "/vacation-rental-reporting-software/",
+      "/vacation-rental-revenue-management-software/",
+      "/vacation-rental-software-pricing/",
+      "/vrbo-pms-integration/"
+    ],
+    "B_author_editorial_review_sufficient": [
+      "/avrenor-stays-pricing/",
+      "/guides/what-is-vacation-rental-pms/",
+      "/vacation-rental-automation-software/",
+      "/vacation-rental-calendar-software/",
+      "/vacation-rental-guest-messaging-software/",
+      "/vacation-rental-reservation-software/",
+      "/vacation-rental-task-management-software/"
+    ],
+    "C_no_expert_review_needed": [
+      "/",
+      "/airbnb-software-for-2-5-properties/",
+      "/compare/",
+      "/guides/",
+      "/guides/pms-vs-channel-manager/",
+      "/pricing/",
+      "/vacation-rental-pricing-software/"
+    ]
+  }
+}
