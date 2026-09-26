@@ -204,19 +204,39 @@
     return 'navigation';
   }
 
+  function isLeadCTA(link) {
+    const raw = link.getAttribute('href') || '';
+    const t = text(link).toLowerCase();
+    if (/avrenorstays\.com/i.test(raw)) return true;
+    if (raw === '/#demo' || /[#]demo$/.test(raw)) return true;
+    if (/get matched|find my best.?fit|get started|visit avrenor|talk to avrenor|explore avrenor/i.test(t)) return true;
+    return false;
+  }
+
   document.addEventListener('click', function (event) {
     const link = event.target.closest('a[href]');
     if (!link) return;
     const href = link.getAttribute('href') || '';
     if (!href || href === '#' || /^javascript:/i.test(href)) return;
 
-    window.gtag('event', 'cta_click', {
+    const ctaParams = {
       cta_text: text(link).slice(0, 150),
       cta_type: link.getAttribute('data-cta-type') || ctaType(link),
       source_page: window.location.pathname,
       destination_url: destination(link).slice(0, 500),
       page_section: link.getAttribute('data-page-section') || sectionLabel(link),
       portfolio_size: link.getAttribute('data-portfolio-size') || portfolioSize(link)
-    });
+    };
+
+    window.gtag('event', 'cta_click', ctaParams);
+
+    if (isLeadCTA(link)) {
+      window.gtag('event', 'generate_lead', {
+        cta_text: ctaParams.cta_text,
+        source_page: ctaParams.source_page,
+        destination_url: ctaParams.destination_url,
+        page_section: ctaParams.page_section
+      });
+    }
   }, true);
 })();
