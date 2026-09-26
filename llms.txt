@@ -1,0 +1,30 @@
+# VacationRentalPMS.com
+
+VacationRentalPMS.com publishes vacation-rental property-management software discovery and decision-support content.
+
+Canonical site: https://vacationrentalpms.com/
+Sitemap: https://vacationrentalpms.com/sitemap.xml
+Machine-readable provenance: https://vacationrentalpms.com/content-provenance.json
+
+## Current authorship and review status
+
+- Publisher and organizational author: VacationRentalPMS.com
+- Organization entity: https://vacationrentalpms.com/#organization
+- Independent industry expert review is not currently implemented.
+- No page currently claims a named expert reviewer or uses reviewedBy structured data.
+- A reviewer will only be shown after their relevant experience is verified and a completed review is recorded for the specific page.
+
+## Evidence and interpretation
+
+- Product capabilities and pricing require current primary vendor sources.
+- Vendor-published statements remain vendor claims; they are not independent validation.
+- Portfolio fit, trade-offs and recommendations are VacationRentalPMS.com editorial analysis unless a page explicitly identifies a verified expert interpretation.
+- Promotional outbound links use sponsored relationship attributes where applicable.
+
+## Commercial context
+
+The site contains prominent calls to action to Avrenor Stays. Avrenor-specific positioning must not be interpreted as independent expert validation. Any sponsorship, affiliate, ownership or other commercial relationship must be disclosed when confirmed by the publisher.
+
+## High-priority content
+
+The complete A/B/C review classification is published in content-provenance.json. Category A pages are candidates for real operator/PMS expert review. Category B pages require normal editorial and primary-source checks. Category C pages do not warrant an expert-review badge.
