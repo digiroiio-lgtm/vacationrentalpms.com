@@ -1,3 +1,6 @@
+# Crawler policy: all crawlers may fetch all public pages (no per-bot blocks
+# for Googlebot, Bingbot, OAI-SearchBot, PerplexityBot, Google-Extended, etc.).
+# There are no private or admin routes on this static site.
 User-agent: *
 Allow: /
 
