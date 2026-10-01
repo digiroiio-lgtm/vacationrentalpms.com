@@ -10,14 +10,22 @@
 
   if (!window.__vrpmsGa4Initialized) {
     window.__vrpmsGa4Initialized = true;
-    if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=' + GA4_ID + '"]')) {
-      const s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
-      document.head.appendChild(s);
-    }
+    // Queue config now; load gtag.js on first interaction or after a short delay so it stays off the critical path.
     window.gtag('js', new Date());
     window.gtag('config', GA4_ID);
+    const loadGtag = function () {
+      if (window.__vrpmsGtagLoaded) return;
+      window.__vrpmsGtagLoaded = true;
+      ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (evt) { window.removeEventListener(evt, loadGtag); });
+      if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=' + GA4_ID + '"]')) {
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+        document.head.appendChild(s);
+      }
+    };
+    ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (evt) { window.addEventListener(evt, loadGtag, { once: true, passive: true }); });
+    window.setTimeout(loadGtag, 3500);
   }
 
   /*

@@ -7,7 +7,7 @@ import path from 'node:path';
 const root = process.cwd();
 const check = process.argv.includes('--check');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'));
-const redirects = new Set(config.redirects.map((item) => item.source));
+const redirects = new Set(config.redirects.filter((item) => !item.has).map((item) => item.source));
 
 const NAV = [
   ['/vacation-rental-pms/', 'Vacation Rental PMS'],
@@ -100,7 +100,8 @@ function addSocial(html) {
 
 function normalize(html, route, notes) {
   html = html.replace(/href="\/#(demo|compare)"/g, 'href="/compare/"');
-  for (const r of config.redirects) {
+  html = html.replace(/<link rel="stylesheet" href="\/provenance\.css">\s*/g, ''); // merged into styles.css
+  for (const r of config.redirects.filter((item) => !item.has)) {
     html = html.split(`href="${r.source}"`).join(`href="${r.destination}"`); // link straight to the destination, not through a 301
   }
   html = html.replace(/(<nav class="nav">)([\s\S]*?)(<\/nav>)/, (_m, open, inner, close) => {

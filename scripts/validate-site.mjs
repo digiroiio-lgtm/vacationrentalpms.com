@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const config = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'));
-const redirects = new Set(config.redirects.map((item) => item.source));
+const redirects = new Set(config.redirects.filter((item) => !item.has).map((item) => item.source));
 const failures = [];
 
 function walk(directory) {
