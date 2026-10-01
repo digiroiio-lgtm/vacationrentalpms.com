@@ -4,7 +4,7 @@
     "name": "VacationRentalPMS.com",
     "id": "https://vacationrentalpms.com/#organization"
   },
-  "lastAudited": "2026-09-22",
+  "lastAudited": "2026-10-01",
   "expertReview": {
     "status": "required_not_yet_implemented",
     "publicReviewerProfiles": [],
@@ -114,7 +114,9 @@
       "/vacation-rental-reporting-software/",
       "/vacation-rental-revenue-management-software/",
       "/vacation-rental-software-pricing/",
-      "/vrbo-pms-integration/"
+      "/vacation-rental-pms/",
+      "/vrbo-channel-manager/",
+      "/airbnb-integrations/"
     ],
     "B_author_editorial_review_sufficient": [
       "/avrenor-stays-pricing/",

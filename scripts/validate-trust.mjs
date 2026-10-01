@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root = process.cwd();
-const redirects = new Set(JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8')).redirects.map((item) => item.source));
+const redirects = new Set(JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8')).redirects.filter((item) => !item.has).map((item) => item.source));
 const provenance = JSON.parse(fs.readFileSync(path.join(root, 'content-provenance.json'), 'utf8'));
 const failures = [];
 

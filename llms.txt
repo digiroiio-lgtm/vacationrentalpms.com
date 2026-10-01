@@ -1,30 +1,44 @@
 # VacationRentalPMS.com
 
-VacationRentalPMS.com publishes vacation-rental property-management software discovery and decision-support content.
+> VacationRentalPMS.com is an information resource on vacation rental software: property management systems (PMS), channel managers, Airbnb and Vrbo connections, pricing, automation and accounting. It publishes guides, comparison frameworks and decision support for hosts and property managers.
 
 Canonical site: https://vacationrentalpms.com/
 Sitemap: https://vacationrentalpms.com/sitemap.xml
-Machine-readable provenance: https://vacationrentalpms.com/content-provenance.json
+Provenance and review status: https://vacationrentalpms.com/content-provenance.json
 
-## Current authorship and review status
+This file is supplemental discovery information. Product capabilities, integrations and prices change; verify them with each vendor. The site features Avrenor Stays as a labeled product example in places; those sections are not independent evaluations.
 
-- Publisher and organizational author: VacationRentalPMS.com
-- Organization entity: https://vacationrentalpms.com/#organization
-- Independent industry expert review is not currently implemented.
-- No page currently claims a named expert reviewer or uses reviewedBy structured data.
-- A reviewer will only be shown after their relevant experience is verified and a completed review is recorded for the specific page.
+## Core topic hubs
 
-## Evidence and interpretation
+- [Vacation Rental PMS](https://vacationrentalpms.com/vacation-rental-pms/): what a property management system is, the software stack around it and how to choose.
+- [Vacation Rental Channel Manager](https://vacationrentalpms.com/vacation-rental-channel-manager/): how channel managers sync availability, rates and reservations; API vs iCal.
+- [Vrbo Channel Manager](https://vacationrentalpms.com/vrbo-channel-manager/): Vrbo connection types, PMS workflows and what to verify.
+- [Airbnb Integrations](https://vacationrentalpms.com/airbnb-integrations/): PMS, pricing, accounting, messaging and automation tools that connect to Airbnb.
+- [Airbnb PMS](https://vacationrentalpms.com/airbnb-property-management-software/): Airbnb property management software and features to compare.
+- [Vacation Rental Software](https://vacationrentalpms.com/vacation-rental-management-software/): the software category and how the types fit together.
 
-- Product capabilities and pricing require current primary vendor sources.
-- Vendor-published statements remain vendor claims; they are not independent validation.
-- Portfolio fit, trade-offs and recommendations are VacationRentalPMS.com editorial analysis unless a page explicitly identifies a verified expert interpretation.
-- Promotional outbound links use sponsored relationship attributes where applicable.
+## Comparison and decision resources
 
-## Commercial context
+- [PMS vs Channel Manager](https://vacationrentalpms.com/pms-vs-channel-manager/)
+- [Best Vacation Rental Software (methodology)](https://vacationrentalpms.com/best-vacation-rental-software/)
+- [Best Airbnb Management Software](https://vacationrentalpms.com/best-airbnb-management-software/)
+- [Comparison hub](https://vacationrentalpms.com/compare/)
+- [Guesty alternative framework](https://vacationrentalpms.com/guesty-alternative/)
+- [How to choose a vacation rental PMS](https://vacationrentalpms.com/guides/how-to-choose-vacation-rental-pms/)
+- [Vacation rental PMS pricing](https://vacationrentalpms.com/guides/vacation-rental-pms-pricing/)
 
-The site contains prominent calls to action to Avrenor Stays. Avrenor-specific positioning must not be interpreted as independent expert validation. Any sponsorship, affiliate, ownership or other commercial relationship must be disclosed when confirmed by the publisher.
+## Operations and revenue
 
-## High-priority content
+- [Reservation and booking software](https://vacationrentalpms.com/vacation-rental-reservation-software/)
+- [Dynamic pricing](https://vacationrentalpms.com/dynamic-pricing-software-for-vacation-rentals/)
+- [Revenue management](https://vacationrentalpms.com/vacation-rental-revenue-management-software/)
+- [Automation](https://vacationrentalpms.com/vacation-rental-automation-software/)
+- [Accounting and payment processing](https://vacationrentalpms.com/vacation-rental-accounting-software/)
 
-The complete A/B/C review classification is published in content-provenance.json. Category A pages are candidates for real operator/PMS expert review. Category B pages require normal editorial and primary-source checks. Category C pages do not warrant an expert-review badge.
+## Integration guides
+
+- [Airbnb PMS integration (API vs iCal)](https://vacationrentalpms.com/airbnb-pms-integration/)
+- [Booking.com PMS integration](https://vacationrentalpms.com/booking-com-pms-integration/)
+- [PMS with PriceLabs](https://vacationrentalpms.com/pms-with-pricelabs/)
+- [PMS with QuickBooks](https://vacationrentalpms.com/vacation-rental-pms-quickbooks/)
+- [PMS with smart locks](https://vacationrentalpms.com/vacation-rental-pms-smart-locks/)
