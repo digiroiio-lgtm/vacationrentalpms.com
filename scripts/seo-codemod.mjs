@@ -79,6 +79,13 @@ function addBreadcrumb(html, route, notes) {
   return html;
 }
 
+const ICONS = '<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">';
+
+function addIcons(html) {
+  if (/rel=["'](shortcut )?icon["']/.test(html)) return html;
+  return html.replace(/(<link[^>]+rel=["']canonical["'][^>]*>)/i, `$1${ICONS}`);
+}
+
 function addSocial(html) {
   const title = unesc(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || '').trim();
   const desc = unesc(html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)/i)?.[1] || '').trim();
@@ -110,6 +117,7 @@ function normalize(html, route, notes) {
     const links = NAV.map(([h, t]) => `<a href="${h}">${t}</a>`).join('');
     return `${open}${links}${button}${close}`;
   });
+  html = addIcons(html);
   html = addSocial(html);
   html = addBreadcrumb(html, route, notes);
   html = addFaq(html, route, notes);
