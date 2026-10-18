@@ -1,7 +1,43 @@
-# Crawler policy: all crawlers may fetch all public pages (no per-bot blocks
-# for Googlebot, Bingbot, OAI-SearchBot, PerplexityBot, Google-Extended, etc.).
+# Crawler policy: all crawlers may fetch all public pages.
+# AI search and assistant crawlers are listed explicitly so the policy is unambiguous.
 # There are no private or admin routes on this static site.
 User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: DuckAssistBot
 Allow: /
 
 Sitemap: https://vacationrentalpms.com/sitemap.xml
